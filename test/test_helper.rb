@@ -1,12 +1,14 @@
-ENV['RAILS_ENV'] ||= 'test'
-require_relative '../config/environment'
-require 'rails/test_help'
+require 'test_helper'
 
-class ActiveSupport::TestCase
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-  fixtures :all
+class StudentTest < ActiveSupport::TestCase
+  test "should have the necessary required validators" do
+    student = Student.new
+    assert_not student.valid?
+    assert_equal [:name, :last_name], student.errors.keys
 
-  # Add more helper methods to be used by all tests here...
+    student.name = "Gerard"
+    student.last_name= "Bouchard"
+    assert student.valid?
+  end
 end
-
 
