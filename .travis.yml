@@ -22,4 +22,12 @@ after_script:
 
  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
+deploy:
 
+  provider: heroku
+
+  api_key:
+  
+    secure: "YOUR ENCRYPTED API KEY"
+  
+  app: projet-lp4a-a2019
