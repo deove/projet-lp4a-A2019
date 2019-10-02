@@ -2,7 +2,7 @@ langugae: ruby
 
 rvm:
 
- - 2.3.3
+ - 2.6.4
  
 before_script:
 
