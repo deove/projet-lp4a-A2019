@@ -1,3 +1,9 @@
+env:
+
+  global:
+
+  - CC_TEST_REPORTER_ID=83baad8519999a5b5e6d714d446637d03275c0314a11cb5fc61d0f410105e633
+
 langugae: ruby
 
 rvm:
@@ -31,5 +37,7 @@ deploy:
      secure: IsnlRWXkAuW4cdiwWvEURNfAfzfjAk5T4sUZLe/oMNvRDIq2y9vAw4Od9/oBdLhq0hgj00w037lWi+KwIybxwIlpz5izYZOuPQpaj4BMLfA/qX7PlegTeZFlno48EKhNOWHSjoYnPrHJ83fzTriIq3b59Io72HHXV02Xo9/xWHuIVD10j67mPsPrEs/ea8ogKWdM61S/COyo9B4JPLHsoJqZIYY4FGEHlog8eibaxnV/nLkHuCO5vtTyCTsS9OW6vu09V7NRiUC3o/XqHJp5Kd279fiaCuYidKlArg8h1+3DB5U3hGcUxiTIjc4dAldlcnue2v6F1YEHNnRXSnCdgEr1BbTC2r1TqICH8WiTfc5Vs9rJWZ8gwfgEt2iUxJOdTafmKZmsAEpam6v98cYYhteWofK7zoCO32VHmE49tADBNzR+SfYdo5pMIqHqiDJqabfIVv0eTWiyMSqSLTC1+PP2hXaecYDo6lpZsJZdfrT2iEgRsJQySxagFJzTBrUv7lIAgX+SP8o5itCgP+9+D/0JvnxqgJZPcniuUAFktwPj9/8jLj0kc4HI/Bw8A7j43IcrVZ9Qb2kmyXolzerVJ3ktdVmJvV254AfRkXCxycykUc65JgTqXiGi5HN58Hj1SdNnuL9IaJkaaXsqjeIYY5wAl8UiIOpfTfKeh8SNjkU=
 
 run:
+ 
  - "bundle install --without development test"
+ 
  - "bundle exec rails db:migrate"
