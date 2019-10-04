@@ -16,5 +16,5 @@ after_script:
 - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 deploy:
   provider: heroku
-  api_key:
+  api_key: secure: kHz1+18n4estBcVn4sXs2B1jMgV3OD7kWUYtEvi3n8ymgZ59HUTfgxUxeKNJKXleqeXoc9k4fUhWr/EPfcIfOB3A5N3xqIX/jAf9d1eVm8qIpV5iX9qZjtr9KbHus0Rj36jHXWqiPYCKAhrJAV2+vvuCjDyuq3tki6kYN5UCu0R489Ddi8Q3FAQeX+7c/fwiemELPWx+swK6tWqP3qfTG/SUwBdjSxLK0IF0YupF+ToytS/Sb+CK6nASIrCPq3vgfNdEP1OYPTHBb/uepf9N0MxiwDNVglGP9AfyKFVOixaUg7T+YoUZdAokiJHGld/D9ITG+kGnbWUNLKt4L727Wl+kuYkuB7Gorak8UJ7aozD9iD/uqDtqM/guwlV6hDTtge+/1og7FmfMIJL1sReLDhd9B+TBTRSIE9Zam3t7eoiO3Ie3JArxp478Bky9BMe/xVjHfY+zfhH8m1Pu7t8pcTA7dHQt0FhqMS+BelB2WdF8PfqOglxjHO/qkgzlPVigDQoNJHu1vUUMSX6Od3Zp/CwPNLnR6ZhLvJAy5VlgmBIqiM2VzTDW/cynb1GvrH1utkaooE6xA3EXOIMnccD+Rs4uGHt73kHFU0imRFUdlLqUKKj980c6sfe+ajdP/YKRYtZHFmgbbkpDaTZpKkZhWIR2+pKbcL+b6M9HfC+lo0s=
   app: projet-yzy
