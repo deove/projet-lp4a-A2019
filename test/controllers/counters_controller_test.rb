@@ -36,7 +36,7 @@ class CountersControllerTest < ActionDispatch::IntegrationTest
 
     assert_difference('Counter.count') do
 
-      post counters_url, params: { counter: { name: @counter.name, valeur: @counter.valeur } }
+      post counters_url, params: { counter: { name: @counter.name, value: @counter.value } }
 
     end
 
@@ -70,11 +70,11 @@ class CountersControllerTest < ActionDispatch::IntegrationTest
 
   test "should increment counter" do
 
-    old_valeur = @counter.valeur
+    old_value = @counter.value
 
     patch counter_url(@counter)
 
-    assert old_valeur + 1 == Counter.find(@counter.id).valeur
+    assert old_value + 1 == Counter.find(@counter.id).value
 
     assert_redirected_to counter_url(@counter)
 
