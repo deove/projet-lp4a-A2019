@@ -2,7 +2,7 @@ class Counter < ApplicationRecord
 
   def increment!
 
-      self.valeur += 1
+      self.valeuer += 1
 
       ActionCable.server.broadcast('counters', self)
 
