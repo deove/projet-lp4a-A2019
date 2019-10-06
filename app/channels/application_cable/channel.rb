@@ -4,6 +4,8 @@ class CountersChannel < ApplicationCable::Channel
 
     # stream_from "some_channel"
 
+    stream_from "counters"
+
   end
 
 
@@ -11,12 +13,6 @@ class CountersChannel < ApplicationCable::Channel
   def unsubscribed
 
     # Any cleanup needed when channel is unsubscribed
-
-  end
-
-
-
-  def increment
 
   end
 
