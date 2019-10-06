@@ -8,4 +8,4 @@ App.counters = App.cable.subscriptions.create "CountersChannel",
     # Called when the subscription has been terminated by the server
   received: (data) ->
     console.log(data)
-    document.getElementById("counter"+data.id).innerHTML = data.value
+    document.getElementById("counter"+data.id).innerHTML = data.valeuer
