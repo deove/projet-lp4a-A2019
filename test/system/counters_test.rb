@@ -32,7 +32,7 @@ class CountersTest < ApplicationSystemTestCase
 
     fill_in "Name", with: @counter.name
 
-    fill_in "Valeur", with: @counter.valeur
+    fill_in "Valeuer", with: @counter.valeuer
 
     click_on "Create Counter"
 
@@ -56,7 +56,7 @@ class CountersTest < ApplicationSystemTestCase
 
     fill_in "Name", with: @counter.name
 
-    fill_in "Valeur", with: @counter.valeur
+    fill_in "Valeuer", with: @counter.valeuer
 
     click_on "Update Counter"
 
